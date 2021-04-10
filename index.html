@@ -12,11 +12,501 @@
     </style>
 </head>
 <body class="shower list">
+    <style>
+        #cover h2 {
+            margin: 30px 0 0;
+            color: white;
+            text-align: center;
+            font-size: 70px;
+        }
+
+        #cover p {
+            margin: 10px 0 0;
+            text-align: center;
+            color: white;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        #cover p a {
+            color: white;
+        }
+
+        .img-wrapper {
+            overflow: hidden;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            min-height: 80%;
+        }
+
+        @font-face {
+            font-family: 'Styrene UI';
+            src: url('https://alfabank.st/media/fonts/styrene-ui/styrene-ui_medium.woff2') format('woff2'),
+            url('https://alfabank.st/media/fonts/styrene-ui/styrene-ui_medium.woff') format('woff');
+            /*font-weight: 500;*/
+        }
+
+        ff {
+            font-family: 'Styrene UI';
+        }
+
+        .slide:before {
+            content: "";
+            position: absolute;
+            background-image: url("alfa.svg");
+            width: 48px;
+            height: 48px;
+            bottom: 30px;
+            right: 100px;
+        }
+
+        .first-slide {
+            background-color: #EF3124;
+            display: flex;
+            align-items: center;
+        }
+
+        .first-slide div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .first-slide:after,
+        .first-slide:before {
+            display: none;
+        }
+
+        .first-slide h1 {
+            color: #fff;
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        .logo-icon_bluredLogo {
+            margin-bottom: -20px;
+        }
+    </style>
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Браузерные плагины – убийцы Virtual DOM</h1>
+        <p>Болотова Ольга</p>
     </header>
+
+    <section class="slide first-slide">
+        <div>
+            <h1>
+                Браузерные плагины – убийцы Virtual DOM
+            </h1>
+            <div
+                style="width: 100%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; flex-direction: column">
+                <hr style="width: 60%; height: 4px; background-color: #fff; margin-bottom: 150px;">
+                <svg class="logo-icon_bluredLogo" fill="currentColor" width="48" height="48" viewBox="0 0 48 48"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M23.9607 7.88513L19.7529 20.4108H28.0907L24.1164 7.88513H23.9607ZM24.2723 1C27.6504 1 28.6362 3.01805 29.4914 5.57288L38.3373 32H31.7919L29.8049 25.7173H17.9606L15.8178 32H9.66205L18.9446 5.57288C19.8451 3.00976 20.8942 1 24.2723 1ZM39 46H9V40H39V46Z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <!--        <img src="sm1.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">-->
+        <h3>About</h3>
+    </section>
+
+    <section class="slide" style="background-color: #ccc;">
+        <img src="15.png" alt="" width="100%"
+             style="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; ">
+        <img class="next" src="15_1.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+        <img class="next" src="15_2.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    </section>
+
+    <section class="slide first-slide">
+        <img src="sm1.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    </section>
+
+    <section class="slide">
+        <img src="sm2.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    </section>
+
+    <section class="slide">
+        <img src="sm3.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    </section>
+
+    <section class="slide">
+        <img src="sm4.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    </section>
+
+    <section class="slide">
+        <h2>Кейс 1: единственный текстовый узел в родителе</h2>
+        <img src="code1.png" alt="" width="700">
+
+        <div class="">
+            <div style="position: relative; height: 54.73px; max-height: 42px;">
+                <img src="1.png" alt="" width="300">
+
+                <!--                <span class="next" style="position: absolute; top: 0; left: 0">-->
+                <!--                    <img src="pointer.svg" alt="" style="position: absolute; width: 26px; left: 46px; bottom: 9px; z-index: 1">-->
+                <!--                    <img src="1.png" alt="" width="300">-->
+                <!--                </span>-->
+
+                <div class="next" style="position: absolute; top: 0">
+                    <img src="3.png" alt="" width="300">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="">
+            <div style="position: relative;">
+                <div>
+                    <img src="1.png" alt="" width="300">
+                    <pre style="font-size: 10px; line-height: 1 !important;">&lt;div class="parent">&lt;/div></pre>
+                </div>
+
+                <div class="next" style="position: absolute; top: 0; padding-left: 0.499999999999999999999999px">
+                    <img src="4.png" alt="" width="308">
+                </div>
+
+                <!--                <div class="next" style="position: absolute; top: 0; background-color: white; height: 380px; width: 310px">-->
+                <!--                    <img src="5.png" alt="" width="300">-->
+                <!--                    <pre style="font-size: 10px; line-height: 1 !important;">&lt;div class="parent">-->
+                <!--                        &lt;font style="vertical-align: inherit;">-->
+                <!--                            &lt;font style="vertical-align: inherit;">-->
+                <!--                                Ny tekst-->
+                <!--                            &lt;/font>-->
+                <!--                        &lt;/font>-->
+                <!--                        &lt;/div>-->
+                <!--                    </pre>-->
+
+                <!--                    <div style="position: relative; padding-top: 100px">-->
+                <!--                        <img src="arrow.svg" alt="" height="20px" style="position:absolute; transform: rotate(90deg); top: 80px; left: 250px;">-->
+                <!--                        <img src="arrow.svg" alt="" height="20px" style="position:absolute; transform: rotate(90deg); top: 80px; left: 357px;">-->
+                <!--                        <img src="6.png" alt="" width="500">-->
+                <!--                    </div>-->
+                <!--                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper" style="position: relative">
+            <img src="setTextContent.png" alt="setTextContent" width="1042">
+            <div class="next" style="position: absolute; top: 0">
+                <img src="setTextContent_a.png" alt="setTextContent" width="1042">
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <!--        <div  class="">-->
+        <!--            <div style="position: relative;">-->
+        <!--                <div>-->
+        <!--                    <img src="1.png" alt="" width="300">-->
+        <!--                    <pre style="font-size: 10px; line-height: 1 !important;">&lt;div class="parent">&lt;/div></pre>-->
+        <!--                </div>-->
+
+        <!--                <div class="next" style="position: absolute; top: 0; padding-left: 0.499999999999999999999999px">-->
+        <!--                    <img src="4.png" alt="" width="308">-->
+        <!--                </div>-->
+
+        <!--                <div class="next" style="position: absolute; top: 0; background-color: white; height: 380px; width: 310px">-->
+        <img src="5.png" alt="" width="300">
+
+        <div style="position: relative; padding-top: 100px">
+            <ff style="position:absolute; font-size: 12px;top: 55px; left: 140px;">&lt;div class="parent">&lt;/div></ff>
+            <img src="arrow.svg" alt="" height="20px"
+                 style="position:absolute; transform: rotate(90deg); top: 80px; left: 250px;">
+            <ff style="position:absolute; font-size: 12px; top: 55px; left: 357px;">Новый текст</ff>
+            <img src="arrow.svg" alt="" height="20px"
+                 style="position:absolute; transform: rotate(90deg); top: 80px; left: 357px;">
+            <img src="6.png" alt="" width="500">
+        </div>
+        <br/>
+        <pre style="font-size: 10px; line-height: 1 !important;"><code>&lt;div class="parent"></code>
+                <code>    &lt;font style="vertical-align: inherit;">&#173;</code>
+                <code>        &lt;font style="vertical-align: inherit;"></code>
+                <code>            Ny tekst</code>
+                <code>        &lt;/font></code>
+                <code>    &lt;/font></code>
+                <code>&lt;/div></code>
+                        </pre>
+        <!--                </div>-->
+        </div>
+        </div>
+    </section>
+
+    <!--    <section class="slide">-->
+    <!--        <div  class="img-wrapper">-->
+    <!--            <img src="setTextContent_a.png" alt="setTextContent" width="1042">-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <div style="position: relative; height: 71.8px;">
+                <img src="resetTextContent.png" alt="resetTextContent" width="1043">
+                <div class="next" style="position: absolute; top: 0">
+                    <img src="resetTextContent_a.png" alt="resetTextContent" width="1042">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <img src="1.png" alt="" width="300">
+
+        <div style="position: relative; padding-top: 100px">
+            <ff style="position:absolute; font-size: 12px;top: 55px; left: 140px;">&lt;div class="parent">&lt;/div></ff>
+            <img src="arrow.svg" alt="" height="20px"
+                 style="position:absolute; transform: rotate(90deg); top: 80px; left: 250px;">
+            <ff style="position:absolute; font-size: 12px;top: 55px; left: 362px;">""</ff>
+            <img src="arrow.svg" alt="" height="20px"
+                 style="position:absolute; transform: rotate(90deg); top: 80px; left: 357px;">
+            <img src="6.png" alt="" width="500">
+        </div>
+        <br>
+        <pre style="font-size: 10px; line-height: 1 !important;">
+                <code>&lt;div class="parent">&lt;/div>
+                </code>
+            </pre>
+        </div>
+        </div>
+    </section>
+    <!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section class="slide"></section>
+    <!--    <section class="slide">-->
+    <!--        <div  class="img-wrapper">-->
+    <!--            <img src="resetTextContent_a.png" alt="resetTextContent" width="1042">-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+
+    <!--    <section class="slide">-->
+    <!--        <div  class="img-wrapper">-->
+    <!--            <img src="appendChild_a.png" alt="appendChild" width="1042.2">-->
+    <!--        </div>-->
+    <!--    </section>-->
+
+    <section class="slide">
+        <h2>Кейс 2: последний в родителе элемент</h2>
+        <img src="9.png" alt="" width="700">
+
+        <div class="">
+            <div style="position: relative; height: 54.73px; max-height: 42px;">
+                <img src="1.png" alt="" width="300">
+
+                <!--                <span class="next" style="position: absolute; top: 0; left: 0">-->
+                <!--                    <img src="pointer.svg" alt="" style="position: absolute; width: 26px; left: 46px; bottom: 9px; z-index: 1">-->
+                <!--                    <img src="1.png" alt="" width="300">-->
+                <!--                </span>-->
+
+                <div class="next" style="position: absolute; top: 0">
+                    <img src="10.png" alt="" width="295">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="insertOrAppendPlacementNode.png" alt="" width="915">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="insertOrAppendPlacementNode_a.png" alt="" width="915">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <div style="position: relative; height: 71.8px;">
+                <img src="appendChild.png" alt="appendChild" width="1042.5">
+                <div class="next" style="position: absolute; top: 0">
+                    <img src="appendChild_a.png" alt="appendChild" width="1042.2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="">
+            <div style="position: relative;">
+                <div>
+                    <img src="1.png" alt="" width="300">
+                    <pre style="font-size: 10px; line-height: 1 !important;">
+                            <code>&lt;div className='parent'>&lt;/div></code>
+                        </pre>
+                </div>
+
+                <div class="next" style="position: absolute; background-color: white; top: 0px;">
+                    <img src="8.png" alt="" width="305">
+                    <pre style="font-size: 10px; line-height: 2 !important;">
+                            <code>&lt;div class="parent"></code>
+                                <code>    &lt;span></code>
+                            <code>        &lt;font style="vertical-align: inherit;"></code>
+                            <code>            &lt;font style="vertical-align: inherit;">Ny gjenstand</code>
+                                <code>  &lt;/font></code>
+                                <code>  &lt;/font></code>
+                                <code>  &lt;/span></code>
+                                <code>&lt;/div></code>
+                        </pre>
+                </div>
+
+                <!--                <div class="next" style="position: absolute; top: 0; padding-left: 0.499999999999999999999999px">-->
+                <!--                    <img src="4.png" alt="" width="308">-->
+                <!--                </div>-->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="slide">
+        <img src="9.png" alt="" width="700">
+
+        <img src="1111.png" alt="" width="1000">
+
+        </div>
+    </section>
+
+    <!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section class="slide"></section>
+
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="insertOrAppendPlacementNode_i.png" alt="" width="915">
+        </div>
+    </section>
+
+    <section class="slide">
+        <img src="code3.png" alt="" width="700">
+
+        <div class="">
+            <div style="position: relative; height: 54.73px; max-height: 42px;">
+                <img src="11.png" alt="" width="300" style="padding-left: 4px; padding-top: 2px">
+
+                <div class="next" style="position: absolute; top: 0">
+                    <img src="12.png" alt="" width="300">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="insertBefore.png" alt="insertBefore" width="1042">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="insertBefore_a.png" alt="insertBefore" width="1042">
+        </div>
+    </section>
+
+
+    </section>
+
+    <div class="slide">
+        <div style="position: relative; height: 54.73px; max-height: 42px;">
+            <div style="position: absolute; top: 0">
+                <img src="11.png" alt="" width="300">
+            </div>
+            <div class="next" style="position: absolute; top: -5.5px; left: -2px">
+                <img src="13.png" alt="" width="411">
+            </div>
+            <div class="next"
+                 style="position: absolute; top: -2.5px; left: -2.6px; background-color: white; height: 380px; width: 450px">
+                <img src="14.png" alt="" width="301">
+            </div>
+        </div>
+        <div class="next">
+            <div style="position: absolute; top: 0; left: 0; background-color: white; height: 380px; width: 450px"></div>
+            <img src="devtools2.png" alt="" height="577" style="position: absolute; top: 0; right: 0; z-index: 2">
+        </div>
+    </div>
+
+    <section class="slide">
+        <!--        <div  class="img-wrapper">-->
+        <div style="position: relative; padding-top: 100px">
+            <!--                <img src="arrow.svg" alt="" height="20px" style="position:absolute; transform: rotate(90deg); top: 80px; left: 250px;">-->
+            <ff style="position: absolute; font-size: 14px; top: 62px; left: 360px;">'Старый текст'</ff>
+            <img src="icons8-вниз-2-96.png" alt="" height="30px" width="23px"
+                 style="position:absolute; top: 70px; left: 470px;">
+        </div>
+        <img src="insertBefore.png" alt="insertBefore" width="1042">
+        <!--        </div>-->
+    </section>
+
+    <section class="slide">
+        <h4>Что VDOM ожидает:</h4>
+        <h4>Что на самом деле в DOM:</h4>
+    </section>
+
+    <section class="slide">
+        <h2>Важно:</h2>
+        <p>Cравнение предыдущей виртуальной версии объекта DOM с новой.</p>
+        <p>Обновление браузерной DOM производится только в том случае, если при сравнении виртуальных DOM выявлены различия
+            между ними.</p>
+    </section>
+
+    <section class="slide"></section>
+
+    <!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section class="slide"></section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="removeChild.png" alt="removeChild" width="1042">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="removeChild_a.png" alt="removeChild" width="1042">
+        </div>
+    </section>
+
+    <section class="slide">
+        <div class="img-wrapper">
+            <img src="removeChild_a.png" alt="removeChild" width="1042">
+        </div>
+    </section>
+
+    <!--  -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <section class="slide"></section>
+
+    <section class="slide">
+        <h2>Выводы</h2>
+        <ol>
+            <li class="next">Все текстовые узлы, которые участвуют в условиях, оборачивать в элементы.</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <img src="screen_react.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    </section>
+
+    <section class="slide">
+        <img src="screen_chromium.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    </section>
+
+    <section class="slide">
+        <img src="answer.png" alt="" width="520px" style="position: relative; top: -50px;">
+    </section>
+
+    <section class="slide" style="background-color: #F5F8FA">
+        <img src="desicion.png" alt="" width="840px" style="">
+    </section>
+
 
     <section class="slide" id="cover">
         <h2>Shower Presentation Engine</h2>
@@ -27,50 +517,25 @@
                 <a href="https://fiftyfootshadows.net">© John Carey</a>
             </figcaption>
         </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
-
-            #cover p a {
-                color: white;
-            }
-        </style>
-    </section>
-
-    <section class="slide">
-        <h2>Shower key features</h2>
-        <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
-        </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
     <section class="slide">
         <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris
+            <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in
+            voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
     </section>
 
     <section class="slide">
         <h2>Two columns if you like</h2>
         <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
         </div>
     </section>
 
@@ -94,7 +559,10 @@
         <h2>Serious citations</h2>
         <figure>
             <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
             </blockquote>
             <figcaption>Marcus Tullius Cicero</figcaption>
         </figure>
@@ -103,49 +571,55 @@
     <section class="slide">
         <h2>Code samples</h2>
         <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
+                <code>&lt;!DOCTYPE html&gt;</code>
+                <code class="mark">&lt;html lang="en"&gt;</code>
+                <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
+                <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
+                <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
+                <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
+                <code><mark>&lt;/head&gt;</mark></code>
+                <code>const [ checked, setChecked] = useState(false);</code>
+
+                <code>&lt;Switch</code>
+                <code>    checked=&#123; checked }</code>
+                <code>    onChange={() => setChecked(!checked)} /></code>
+                <code>&lt;div className='parent'>&#123; checked && 'Новый текст' }&lt;/div></code>
+            </pre>
     </section>
 
     <section class="slide">
         <h2>Even tables</h2>
         <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
+            <tr>
+                <th scope="col">Locavore</th>
+                <th>Umami</th>
+                <th>Helvetica</th>
+                <th>Vegan</th>
+            </tr>
+            <tr>
+                <th scope="row">Fingerstache</th>
+                <td>Kale</td>
+                <td>Chips</td>
+                <td>Keytar</td>
+            </tr>
+            <tr>
+                <th scope="row">Sriracha</th>
+                <td>Gluten-free</td>
+                <td>Ennui</td>
+                <td>Keffiyeh</td>
+            </tr>
+            <tr>
+                <th scope="row">Thundercats</th>
+                <td>Jean</td>
+                <td>Shorts</td>
+                <td>Biodiesel</td>
+            </tr>
+            <tr>
+                <th scope="row">Terry</th>
+                <td>Richardson</td>
+                <td>Swag</td>
+                <td>Blog</td>
+            </tr>
         </table>
         <p>It’s good to have information organized.</p>
     </section>
@@ -167,6 +641,18 @@
 
     <section class="slide">
         <h2 class="shout shrink">You can even shout this way</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Shower key features</h2>
+        <ol>
+            <li>Built on HTML, CSS and JavaScript</li>
+            <li>Works in all modern browsers</li>
+            <li>Themes are separated from engine</li>
+            <li>Fully keyboard accessible</li>
+            <li>Printable to PDF</li>
+        </ol>
+        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
     <section class="slide">

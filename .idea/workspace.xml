@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e759fb12-c4fe-4f57-b363-44ad78f095a3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shower.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1111.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/15_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alfa.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/answer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appendChild.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appendChild_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/desicion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devtools1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/devtools2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/icons8-вниз-2-96.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insertBefore.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insertBefore_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insertOrAppendPlacementNode.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insertOrAppendPlacementNode_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/insertOrAppendPlacementNode_i.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pointer.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/removeChild.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/removeChild_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resetTextContent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resetTextContent_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screen_chromium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screen_react.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setTextContent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setTextContent_a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sm1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sm2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sm3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sm4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qleIZNYcEboX8IgrOrWUdDHFwJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e759fb12-c4fe-4f57-b363-44ad78f095a3" name="Default Changelist" comment="" />
+      <created>1617658524965</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617658524965</updated>
+      <workItem from="1617658526087" duration="1625000" />
+      <workItem from="1617734994496" duration="31398000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+</project>
