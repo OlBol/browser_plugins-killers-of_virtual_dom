@@ -47,6 +47,11 @@
             /*font-weight: 500;*/
         }
 
+        .without-flag:before,
+        .without-flag:after {
+            display: none;
+        }
+
         ff {
             font-family: 'Styrene UI';
         }
@@ -115,29 +120,250 @@
     <section class="slide">
         <!--        <img src="sm1.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">-->
         <h3>About</h3>
-    </section>
-
-    <section class="slide" style="background-color: #ccc;">
-        <img src="15.png" alt="" width="100%"
-             style="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 2; ">
-        <img class="next" src="15_1.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
-        <img class="next" src="15_2.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+<!--        <img src="photo_2021-04-10_19-40-26.jpg" alt="" style="-->
+<!--        /*position:absolute; */-->
+<!--        width: 200px; border-radius: 100%;     object-fit: cover;-->
+<!--    height: 200px;-->
+<!--    top: 100px;-->
+<!--    right: 145px;">-->
+        <ul>
+            <li>JS-dev в Альфа Банке</li>
+            <li>Наставница с 4-летним опытом</li>
+            <li>Степень магистра в компьютерных науках (НИУ ИТМО)</li>
+        </ul>
     </section>
 
     <section class="slide first-slide">
-        <img src="sm1.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+        <div>
+            <h1>
+                Браузерные плагины – убийцы Virtual DOM
+            </h1>
+            <div
+                style="width: 100%; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; flex-direction: column">
+                <hr style="width: 60%; height: 4px; background-color: #fff; margin-bottom: 150px;">
+                <svg class="logo-icon_bluredLogo" fill="currentColor" width="48" height="48" viewBox="0 0 48 48"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#fff" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M23.9607 7.88513L19.7529 20.4108H28.0907L24.1164 7.88513H23.9607ZM24.2723 1C27.6504 1 28.6362 3.01805 29.4914 5.57288L38.3373 32H31.7919L29.8049 25.7173H17.9606L15.8178 32H9.66205L18.9446 5.57288C19.8451 3.00976 20.8942 1 24.2723 1ZM39 46H9V40H39V46Z"></path>
+                </svg>
+            </div>
+        </div>
     </section>
 
-    <section class="slide">
-        <img src="sm2.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    <section class="slide  without-flag">
+        <div class="browser">
+            <div id="browserBar">
+                <div id="controls">
+                    <div id="close"></div>
+                    <div id="min"></div>
+                    <div id="max"></div>
+                </div>
+                <div id="tabs">
+                    <div class="tab" >
+                        <!--                    <p v-on:click="select(tab)">{{tab.name}}</p>-->
+                        <!--                    <span v-on:click="closeTab(tab)">✖</span>-->
+                    </div>
+                </div>
+                <div id="tabcontrols">
+                    <i class="fa fa-plus" aria-hidden="true" id="newtab">
+                        <svg id="Layer_1" width="14" Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>plus-cross-glyph</title><polygon points="511.99 308.25 511.99 203.75 308.25 203.75 308.25 0 203.75 0 203.75 203.75 0.01 203.75 0.01 308.25 203.75 308.25 203.75 511.99 308.25 512 308.25 308.25 511.99 308.25" fill="#fff"/></svg>
+                    </i>
+                    <i class="fa fa-bars" aria-hidden="true" id="menu">
+                        <div class="burger">
+                            <span class="top"></span>
+                            <span class="center"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </i>
+                </div>
+            </div>
+            <div class="browser-content">
+                <img src="gt.png" alt="" width="100%">
+            </div>
+        </div>
     </section>
 
-    <section class="slide">
-        <img src="sm3.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    <section class="slide  without-flag">
+        <div class="browser">
+            <div id="browserBar">
+                <div id="controls">
+                    <div id="close"></div>
+                    <div id="min"></div>
+                    <div id="max"></div>
+                </div>
+                <div id="tabs">
+                    <div class="tab" >
+                        <!--                    <p v-on:click="select(tab)">{{tab.name}}</p>-->
+                        <!--                    <span v-on:click="closeTab(tab)">✖</span>-->
+                    </div>
+                </div>
+                <div id="tabcontrols">
+                    <i class="fa fa-plus" aria-hidden="true" id="newtab">
+                        <svg id="Layer_1" width="14" Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>plus-cross-glyph</title><polygon points="511.99 308.25 511.99 203.75 308.25 203.75 308.25 0 203.75 0 203.75 203.75 0.01 203.75 0.01 308.25 203.75 308.25 203.75 511.99 308.25 512 308.25 308.25 511.99 308.25" fill="#fff"/></svg>
+                    </i>
+                    <i class="fa fa-bars" aria-hidden="true" id="menu">
+                        <div class="burger">
+                            <span class="top"></span>
+                            <span class="center"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </i>
+                </div>
+            </div>
+            <div class="browser-content">
+                <img src="15.png" alt="" width="100%">
+                <img class="next" src="15_1.png" alt="" width="100%">
+                <img class="next" src="15_2.png" alt="" width="100%">
+            </div>
+        </div>
     </section>
 
-    <section class="slide">
-        <img src="sm4.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+    <section class="slide without-flag">
+        <div class="browser">
+            <div id="browserBar">
+                <div id="controls">
+                    <div id="close"></div>
+                    <div id="min"></div>
+                    <div id="max"></div>
+                </div>
+                <div id="tabs">
+                    <div class="tab" >
+                        <!--                    <p v-on:click="select(tab)">{{tab.name}}</p>-->
+                        <!--                    <span v-on:click="closeTab(tab)">✖</span>-->
+                    </div>
+                </div>
+                <div id="tabcontrols">
+                    <i class="fa fa-plus" aria-hidden="true" id="newtab">
+                        <svg id="Layer_1" width="12" Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>plus-cross-glyph</title><polygon points="511.99 308.25 511.99 203.75 308.25 203.75 308.25 0 203.75 0 203.75 203.75 0.01 203.75 0.01 308.25 203.75 308.25 203.75 511.99 308.25 512 308.25 308.25 511.99 308.25" fill="#fff"/></svg>
+                    </i>
+                    <i class="fa fa-bars" aria-hidden="true" id="menu">
+                        <div class="burger">
+                            <span class="top"></span>
+                            <span class="center"></span>
+                            <span class="bottom"></span>
+                        </div>
+                    </i>
+                </div>
+            </div>
+            <div class="browser-content">
+                <img src="sm1.png" alt="" width="100%">
+                <div class="next">
+                    <svg style="z-index: 3; position: absolute; right: 282px; top: 82px; transform: rotate(47deg);" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="#CC3B2F" d="M24 12l-9-8v6h-15v4h15v6z"/></svg>
+                    <img src="sm2.png" alt="" width="100%">
+                </div>
+                <img class="next" src="sm3.png" alt="" width="100%">
+                <div class="next" style="z-index: 4; position:relative;">
+                    <svg style="z-index: 3; position: absolute; right: 270px; top: 74px; transform: rotate(47deg);" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="#CC3B2F" d="M24 12l-9-8v6h-15v4h15v6z"/></svg>
+                    <img src="sm4.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+        <style>
+            .burger {
+                position: relative;
+                /*left: 20px;*/
+                /*top: 20px;*/
+                width: 15px;
+                height: 17px;
+                /*cursor: pointer;*/
+            }
+            .top,
+            .center,
+            .bottom {
+                height: 2.3px;
+                width: 14px;
+                position: absolute;
+                background-color: #fff;
+            }
+            .top {
+                top: 0;
+            }
+            .center {
+                top: 5px;
+            }
+            .bottom {
+                top: 10px;
+            }
+
+            .browser {
+                position: absolute;
+                top: 40px;
+                left: 65px;
+                right: 65px;
+                bottom: 45px;
+                box-shadow: 0 10px 40px #BCBCBD;
+            }
+            .browser-content {
+                position:absolute;
+                top: 40px;
+                z-index: 2;
+                height: 476px;
+                width: 100%;
+                overflow: hidden;
+            }
+            .browser-content img {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                height: 450px;
+                width: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+            #browserBar {
+                height: 40px;
+                width: 100%;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background: #BCBCBD;
+                position: relative;
+                display: flex;
+            }
+            #tabs {
+                display: flex;
+                flex: 1;
+                height: 40px;
+                overflow: hidden;
+                margin-left: 5px;
+                justify-content: flex-end;
+            }
+            #controls {
+                display: flex;
+                margin-left: 10px;
+                align-items: center;
+                height: 40px;
+            }
+            #controls div {
+                height: 12px;
+                width: 12px;
+                margin-right: 5px;
+                border-radius: 10px;
+            }
+            #controls #close {
+                background: #FB5E59
+            }
+            #controls #min {
+                background: #FCBA40
+            }
+            #controls #max {
+                background: #33C647
+            }
+            #tabcontrols {
+                padding-left: 10px;
+                padding-right: 10px;
+                display: flex;
+                height: 50px;
+                align-items: center;
+            }
+            #tabcontrols i {
+                font-size: 12px;
+                margin-left: 10px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+        </style>
     </section>
 
     <section class="slide">
@@ -161,15 +387,32 @@
     </section>
 
     <section class="slide">
-        <div class="">
-            <div style="position: relative;">
+<!--        <div class="">-->
+            <div style="position: relative; height: 100%;">
                 <div>
                     <img src="1.png" alt="" width="300">
-                    <pre style="font-size: 10px; line-height: 1 !important;">&lt;div class="parent">&lt;/div></pre>
+                    <pre style="font-size: 10px; line-height: 1 !important;">
+                        <code>&lt;div class="parent">&lt;/div></code>
+                        <code></code>
+                    </pre>
                 </div>
 
                 <div class="next" style="position: absolute; top: 0; padding-left: 0.499999999999999999999999px">
                     <img src="4.png" alt="" width="308">
+                </div>
+
+                <div class="next" style="position:absolute; background-color: white; top: 0; bottom: 0; z-index: 3;">
+                    <img src="5.png" alt="" width="308">
+
+                    <br/>
+                    <pre style="font-size: 10px; line-height: 1 !important;"><code>&lt;div class="parent"></code>
+                <code>    &lt;font style="vertical-align: inherit;">&#173;</code>
+                <code>        &lt;font style="vertical-align: inherit;"></code>
+                <code>            Ny tekst</code>
+                <code>        &lt;/font></code>
+                <code>    &lt;/font></code>
+                <code>&lt;/div></code>
+                        </pre>
                 </div>
 
                 <!--                <div class="next" style="position: absolute; top: 0; background-color: white; height: 380px; width: 310px">-->
