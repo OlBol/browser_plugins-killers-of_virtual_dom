@@ -239,9 +239,10 @@
             </div>
         </div>
         <div class="browser-content">
+            <img src="50.png" alt="" width="100%" STYLE="z-index: 1; position:absolute; left: -410.5px">
             <img src="15.png" alt="" width="100%">
-            <img class="next" src="15_1.png" alt="" width="100%">
-            <img class="next" src="15_2.png" alt="" width="100%">
+            <img class="next" src="15_1.png" alt="" width="100%" STYLE="z-index: 2; position:absolute;" >
+            <img class="next" src="15_2.png" alt="" width="100%" STYLE="z-index: 2; position:absolute;" >
         </div>
     </div>
 </section>
@@ -788,7 +789,7 @@
 <!--    </section>-->
 
 <section class="slide">
-    <h3 style="    line-height: 1;">Кейс 1: вставляемый узел – последний в родителе элемент</h3>
+    <h3 style="    line-height: 1;">Кейс 2: вставляемый узел – последний в родителе элемент</h3>
     <img src="9.png" alt="" width="700">
 
     <div class="">
@@ -1212,19 +1213,26 @@
 <!--                    &lt;!&ndash;                                <code>  &lt;/span></code>&ndash;&gt;-->
 <!--                                <code>&lt;/div></code>-->
 <!--                        </pre>-->
-                <pre
-                    style="font-size: 12px; line-height: 1 !important; position: absolute; background-color: #fff; right: 0; top: 26px; width: 476px; padding-left: 15px;padding-top: 10px;z-index: 12;">
+                <style>
+                    .long-pre code {
+                        font-size: 14.6px !important;
+                    }
+                </style>
+                <pre class="long-pre"
+                    style="font-size: 12px !important; line-height: 1 !important; position: absolute; background-color: #fff; right: 0; top: 26px; width: 476px; padding-left: 15px;padding-top: 10px;z-index: 12;">
                     <code><span class="pure">&lt;div</span> <span class="yellow">class=</span><span class="blue">"parent"</span><span class="pure">></span></code>
                 <code>  <span class="pure">&lt;font</span> <span class="yellow">style=</span><span class="blue">"vertical-align: inherit;"</span><span class="pure">>&#173;</span></code>
                 <code>    <span class="pure">&lt;font</span> <span class="yellow">style=</span><span class="blue">"vertical-align: inherit;"</span><span class="pure">></span></code>
                 <code>      Ny tekst</code>
                 <code>    <span class="pure">&lt;/font></span></code>
                 <code>  <span class="pure">&lt;/font></span></code>
-                <code>  <span class="pure">&lt;font</span> <span class="yellow">style=</span><span class="blue">"vertical-align: inherit;"</span><span class="pure">>&#173;</span></code>
-                <code>    <span class="pure">&lt;font</span> <span class="yellow">style=</span><span class="blue">"vertical-align: inherit;"</span><span class="pure">></span></code>
-                <code>      Gammel node</code>
+                <code>  <span class="pure">&lt;span></span></code>
+                <code>    <span class="pure">&lt;font</span> <span class="yellow">style=</span><span class="blue">"vertical-align: inherit;"</span><span class="pure">>&#173;</span></code>
+                <code>      <span class="pure">&lt;font</span> <span class="yellow">style=</span><span class="blue">"vertical-align: inherit;"</span><span class="pure">></span></code>
+                <code>        Gammel node</code>
+                <code>      <span class="pure">&lt;/font></span></code>
                 <code>    <span class="pure">&lt;/font></span></code>
-                <code>  <span class="pure">&lt;/font></span></code>
+                <code>  <span class="pure">&lt;/span></span></code>
                 <code><span class="pure">&lt;/div></span></code>
                         </pre>
 
@@ -1290,12 +1298,12 @@
     <h2 class="shrink " style="text-align: center;">Пытались ли решить эту проблему команды React или Google Translate?</h2>
 </section>
 
-<section class="slide">
-    <img src="screen_react.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+<section class="slide without-flag">
+    <img src="screen_chromium.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
 </section>
 
-<section class="slide">
-    <img src="screen_chromium.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
+<section class="slide without-flag">
+    <img src="screen_react.png" alt="" width="100%" style="position:absolute; top: 0; left: 0;z-index: 2">
 </section>
 
 <section class="slide">
@@ -1309,16 +1317,15 @@
 <section class="slide">
     <h2>Альтернативные способы решения проблемы</h2>
     <ul>
-        <li>Поставить класс notranslate любому блоку</li>
-        <li>Подписаться на событие изменения значения атрибута lang тега html</li>
+        <li>Поставить класс <b>notranslate</b> любому блоку</li>
+        <li>Подписаться на событие изменения значения атрибута <b>lang</b> тега html</li>
     </ul>
-
 </section>
 
 <section class="slide">
     <h2>Выводы</h2>
     <ol>
-        <li class="next">Все текстовые узлы, которые участвуют в условиях, оборачивать в элементы.</li>
+        <li class="next">Все текстовые узлы, которые участвуют в условиях, оборачивать в теги.</li>
         <li class="next">Никогда не меняйте DOM самостоятельно в своем коде, если ваша библиотека или фреймворк использует VDOM.</li>
         <li class="next">Не забывайте правильно выставлять язык страницы в атрибуте lang.</li>
     </ol>
